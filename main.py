@@ -1,12 +1,10 @@
 """
 
-- This script is educational and fully coded by M. logique aka @1ogi in discord
-- if you choose to abuse this tool it's are your fault and M. logique will not accept anything about you're mistake
+- This script is educational and fully coded by F-518 aka @7z.m17 in discord
+- if you choose to abuse this tool it's are your fault and F-518 will not accept anything about your mistake
 
 
 ✨ Bruh Nuker. A defferant nuker that you can enjoy it cool featchurs ✨
-- https://github.com/Bad-Discord/Discord-Nuker
-- ⚠ use it on your own purpose
 
 """
 
@@ -95,7 +93,7 @@ async def main(token: str, guild_id):
         info = Tools.information(guild_id, token)
 
     menu = """
-> github.com/Bad-Discord/Discord-Nuker
+> Made By F-518 ♥︎
 
 01. Delete All Channels    08. Webhook Spam Guild     15. Change Guild Icon
 02. Delete All Roles       09. Message Spam Guild     16. Remove all emojis
@@ -853,7 +851,7 @@ async def main(token: str, guild_id):
                             Thread(target=nuker.send_webhook, args=(webhook, f"# {choisex(names)} @everyone @here {invite_link}", amount)).start()
                         
                         for i in range(amount):
-                            nuker.send_message(status, f"# {choisex(names)} @everyone @here {invite_link}")
+                            nuker.send_message(status, f"# {choisex(names)} @everyone @here JOIN UP {invite_link}")
 
                     else: e.create(name)
 
@@ -954,7 +952,7 @@ def start(args):
 
 
     System.Clear()
-    System.Title("Discord Nuker - github.com/Bad-Discord/Discord-Nuker")
+    System.Title("Discord Nuker - By F-518")
     System.Size(160, 40)
 
 
