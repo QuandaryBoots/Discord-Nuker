@@ -191,9 +191,9 @@ class Nuking:
     def send_webhook(self, url: str,message: str, times: int):
         try:
             payload = {
-                "username": "ZZZZZZZZZZ",
+                "username": "F-518",
                 "content": message,
-                "avatar_url": "https://cdn.discordapp.com/attachments/1054650838129332255/1189847060082606121/download.jpg?ex=659fa66d&is=658d316d&hm=411ec5aeef0752758152a1bb43df4a325f6bc625c3a532dc6db7201fbd3f09e0&"
+                "avatar_url": "https://cdn.discordapp.com/attachments/1446568118809006203/1446801621991293088/Screenshot_20251203_230008_TikTok.jpg?ex=69354e82&is=6933fd02&hm=eb46c2620a6af4f289c040157c70848e3c3ae43f2c05844dc6e832c96a7b6536&"
 
             }
 
