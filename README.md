@@ -39,6 +39,6 @@ pip install -r requirements.txt; python main.python
 ### Termux
 - Here is the one line command for Installation:
 ```shell
-pkg update -y && pkg upgrade -y && pkg install python git && git clone https://github.com/QuandaryBoots/Discord-Nuker && cd Discord-Nuker && pip install -r requirements.txt && python main.py
+pkg update -y && pkg upgrade -y && pkg install python git && git clone https://github.com/QuandaryBoots/Hi && cd Hi && pip install -r requirements.txt && python main.py
 ```
 - Just copy and paste it in your Termux's shell
