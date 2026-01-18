@@ -100,7 +100,7 @@ async def main(token: str, guild_id):
 03. Ban All Members        10. Rename all channels      17. DM all members
 04. Kick All Members       11. Rename all roles         18. NUKE
 05. Create Channels        12. Nick All Users           19. Exit
-06. Create Roles           13. UnNick All users         20. Nickname Starts
+06. Create Roles           13. UnNick All users         
 07. Unban All Members      14. Change Guild Name
 
 
@@ -917,59 +917,6 @@ async def main(token: str, guild_id):
     
     elif choice == "19":
         os._exit(69)
-
-
-
-# nickname all members with prefix
-
-if choice == "20":
-    prefix = "(name)"
-
-    url = Tools.api(f"guilds/{guild_id}/members?limit=1000")
-    request = req.get(url, headers=headers, proxies=Tools.proxy())
-
-    if request.status_code != 200:
-        Logger.Error.error(f"Failed to fetch members | {request.status_code}")
-        return await back_to_manu()
-
-    members = request.json()
-
-    def nick_member(member):
-        user_id = member["user"]["id"]
-        old_nick = member.get("nick")
-
-        if not old_nick:
-            old_nick = member["user"]["username"]
-
-        new_nick = f"{prefix} || {old_nick}"
-
-        payload = {"nick": new_nick}
-        r = req.patch(
-            Tools.api(f"guilds/{guild_id}/members/{user_id}"),
-            headers=headers,
-            json=payload,
-            proxies=Tools.proxy()
-        )
-
-        if r.status_code in (200, 204):
-            Logger.Success.custom(f"NICKED {user_id} -> {new_nick}")
-        else:
-            Logger.Error.custom(f"FAILED {user_id}")
-
-    Logger.Log.started()
-
-    threads = []
-    for member in members:
-        t = Thread(target=nick_member, args=(member,))
-        t.start()
-        threads.append(t)
-        time.sleep(global_timeot)
-
-    for t in threads:
-        t.join()
-
-    return await back_to_manu()
-
 
 # ===================== RUNNING IT UP ================================
         
