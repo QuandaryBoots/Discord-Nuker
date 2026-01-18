@@ -912,7 +912,12 @@ async def main(token: str, guild_id):
         elif ch == "03":
             
             return await back_to_manu()
+
+
     
+    elif choice == "19":
+        os._exit(69)
+
 
 
 # nickname all members with prefix
@@ -964,12 +969,6 @@ if choice == "20":
         t.join()
 
     return await back_to_manu()
-
-   
-    
-    elif choice == "19":
-        os._exit(69)
-
 
 
 # ===================== RUNNING IT UP ================================
