@@ -95,12 +95,12 @@ async def main(token: str, guild_id):
     menu = """
 > Made By F-518 <3
 
-01. Delete All Channels    08. Webhook Spam Guild     15. Change Guild Icon
-02. Delete All Roles       09. Message Spam Guild     16. Remove all emojis
-03. Ban All Members        10. Rename all channels    17. DM all members
-04. Kick All Members       11. Rename all roles       18. NUKE
-05. Create Channels        12. Nick All Users         19. Nickname Starts
-06. Create Roles           13. UnNick All users       20. Exit
+01. Delete All Channels    08. Webhook Spam Guild       15. Change Guild Icon
+02. Delete All Roles       09. Message Spam Guild       16. Remove all emojis
+03. Ban All Members        10. Rename all channels      17. DM all members
+04. Kick All Members       11. Rename all roles         18. NUKE
+05. Create Channels        12. Nick All Users           19. Nickname Starts
+06. Create Roles           13. UnNick All users         20. Exit
 07. Unban All Members      14. Change Guild Name
 
 
