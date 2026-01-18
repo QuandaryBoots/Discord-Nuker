@@ -99,8 +99,8 @@ async def main(token: str, guild_id):
 02. Delete All Roles       09. Message Spam Guild       16. Remove all emojis
 03. Ban All Members        10. Rename all channels      17. DM all members
 04. Kick All Members       11. Rename all roles         18. NUKE
-05. Create Channels        12. Nick All Users           19. Nickname Starts
-06. Create Roles           13. UnNick All users         20. Exit
+05. Create Channels        12. Nick All Users           19. Exit
+06. Create Roles           13. UnNick All users         20. Nickname Starts
 07. Unban All Members      14. Change Guild Name
 
 
@@ -917,7 +917,7 @@ async def main(token: str, guild_id):
 
 # nickname all members with prefix
 
-if choice == "19":
+if choice == "20":
     prefix = "(name)"
 
     url = Tools.api(f"guilds/{guild_id}/members?limit=1000")
@@ -967,7 +967,7 @@ if choice == "19":
 
    
     
-    elif choice == "20":
+    elif choice == "19":
         os._exit(69)
 
 
